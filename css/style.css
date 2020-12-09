@@ -1,0 +1,179 @@
+*{
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+}
+
+header{
+  background-color: #000;
+  width:100%;
+  height:80px;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 9999;
+}
+
+header::after{
+  content:'';
+  background: #000;
+  transform: rotate(45deg);
+  width:20px;
+  height:20px;
+  position: absolute;
+  bottom:-10px;
+  left:60%;
+}
+
+#jumbotron{
+  width:100%;
+  min-height: 480px;
+  background-image: url('../resources/home-slider-62528242.jpg');
+  background-size:cover;
+  margin-top:80px;
+  position: relative;
+}
+
+.centered{
+  position:absolute;
+  padding:30px;
+  width: 50%;
+  height:50%;
+  left:50%;
+  top:50%;
+  text-align: center;
+  transform: translate(-50%,-50%);
+}
+
+.banner{
+  background-color: #fed23f;
+  text-align: center;
+  height: 80px;
+}
+
+.banner button{
+  position: relative;
+  top:50px;
+}
+
+#specialist ,#explore , #corevalue{
+  width:100%;
+  background-color: white;
+  text-align: center;
+  margin-top:80px;
+}
+#specialist p  , #explore p , #corevalue p{
+  width:50%;
+  margin:20px auto;
+}
+
+.upperhr{
+  width:10%;
+  color:#fed23f;
+  margin: 20px auto;
+}
+
+.container{
+  display: flex;
+  width:80%;
+  margin: 40px auto;
+}
+
+.box{
+  width:20%;
+  background-color:#f0ede6;
+  padding:20px;
+  border-radius: 10px;
+  margin: 3%;
+}
+
+#infopannel{
+  position: relative;
+  overflow: hidden;
+  padding: 50px 0;
+  width:100%;
+}
+
+.wrapone{
+  background-image: url('../resources/home-244125289.jpg');
+}
+
+.wrapinfo{
+  position: relative;
+  background-size: cover;
+  height: 580px;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapinfo:before,
+.wrapinfo:after {
+  box-shadow: 0 0px 0 80px white;
+  border-radius: 100%;
+  position: absolute;
+  height: 280px;  /* You can change height to increase or decrease concave radius */
+  content: '';
+  right: -20%;
+  left: -20%;
+  top: 100%;
+}
+
+.wrapinfo:after {
+  bottom: 100%;
+  top: auto;
+}
+
+.infos{
+  z-index:99;
+  height:10%;
+  align-self: center;
+  text-align: center;
+}
+
+#explore .container{
+  display: flex;
+  justify-content: center;
+}
+
+.explorebox{
+  width:32%;
+  margin:0;
+}
+
+.explorebox img{
+  max-height: 220px;
+  background-size: cover;
+}
+
+.bottomhr{
+  color: #f0ede6;
+  display: inline-block;
+  width:32%;
+}
+
+#explore{
+  margin-bottom: 100px;
+}
+
+#corevalue{
+  padding-top:80px;
+  background-color: #bcbcbc;
+}
+
+.corebox{
+
+}
+
+.wraptwo{
+  background-image: url('../resources/home-parallax-144609983.jpg');
+}
+
+.wraptwo div{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  width:60%;
+  height:50%;
+  text-align:center;
+}
