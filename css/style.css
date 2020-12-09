@@ -2,6 +2,7 @@
   box-sizing: border-box;
   padding:0;
   margin:0;
+  font-family: 'Roboto', sans-serif;
 }
 
 header{
@@ -126,7 +127,6 @@ header::after{
   padding-bottom:50px;
 }
 #specialist p  , #explore p , #corevalue p{
-  width:50%;
   margin:20px auto;
 }
 
@@ -143,11 +143,19 @@ header::after{
 }
 
 .box{
-  width:20%;
+  width:24%;
+  margin:1%;
   background-color:#f0ede6;
   padding:20px;
   border-radius: 10px;
-  margin: 3%;
+  color:#6b6868;
+}
+
+.box i {
+  padding:12px;
+  border:solid 1px #6b6868;
+  border-radius: 100%;
+  margin-bottom:20px;
 }
 
 #infopannel{
