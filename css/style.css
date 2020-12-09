@@ -17,12 +17,22 @@ header{
 header img{
   margin-right: 50px;
 }
-ul{
+
+header ul{
   list-style: none;
 }
 
-ul li{
+header ul li{
   display: inline-block;
+  margin-left:20px;
+  color:#b9b9b9;
+  cursor: pointer;
+}
+
+header ul li:last-child{
+  background-color: #fed03d;
+  padding:8px;
+  color:#574f35;
 }
 
 .selected{
@@ -49,28 +59,63 @@ header::after{
   background-image: url('../resources/home-slider-62528242.jpg');
   background-size:cover;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.centered{
-  position:absolute;
-  padding:30px;
-  width: 50%;
-  height:50%;
-  left:50%;
-  top:50%;
-  text-align: center;
-  transform: translate(-50%,-50%);
+#jumbotron div{
+  width:60%;
 }
+
+#jumbotron div h2{
+  color:#fff;
+  margin-bottom:5%;
+}
+
+#jumbotron div h5{
+  color:#fed03d;
+  margin-bottom: 5%;
+}
+
+.ochrabtn , .greybtn{
+  padding:5px 10px;
+  border:none;
+  cursor: pointer;
+}
+
+.ochrabtn{
+  background-color: #fed03d;
+  color:#574f35;
+}
+
+.greybtn{
+  background-color: #333333;
+  color:#fff;
+}
+
 
 .banner{
   background-color: #fed23f;
   text-align: center;
-  height: 140px;
+  height: 90px;
+  color:#1e1e1e;
+  position:relative;
+}
+
+.banner h3{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  font-weight: 300;
 }
 
 .banner button{
   position: relative;
-  top:100px;
+  top:78px;
+  border: #fff solid 1px;
 }
 
 #specialist ,#explore , #corevalue{

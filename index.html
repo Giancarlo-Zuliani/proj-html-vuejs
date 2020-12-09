@@ -18,17 +18,17 @@
     </header>
 
     <section id="jumbotron">
-      <div class="centered jumbosection">
+      <div class="">
         <h2>BUILDING INSPIRING SPACES</h2>
         <h5>We build inspiring Residential & Commercial Spaces</h5>
-        <button type="button" name="button" class="grey btn">EXPLORE RECENT WORK</button>
-        <button type="button" name="button" class="ochra btn">GET A QUOTE TODAY</button>
+        <button type="button" name="button" class="greybtn">EXPLORE RECENT WORK</button>
+        <button type="button" name="button" class="ochrabtn">GET A QUOTE TODAY</button>
       </div>
     </section>
 
     <div class="banner">
       <h3>Do You Have A Constructor Project We Can Help With?</h3>
-      <button type="button" name="button">GET A FREE QUOTE</button>
+      <button type="button" class="greybtn" name="button">GET A FREE QUOTE</button>
     </div>
 
     <section id="specialist">
@@ -203,13 +203,16 @@
          </div>
        </section>
        <footer id="footer">
-
-
+         <div class="" v-for="(item,i) in contents">
+           <ul>
+             <li v-for="html in contents[i]" v-html="html"></li>
+           </ul>
+         </div>
          <section id="subfooter">
-           
+
          </section>
        </footer>
-
+       <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>
