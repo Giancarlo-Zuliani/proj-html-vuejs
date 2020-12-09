@@ -5,32 +5,49 @@
 }
 
 header{
-  background-color: #000;
+  background-color: #fff;
   width:100%;
-  height:80px;
-  position: fixed;
-  top:0;
-  left:0;
-  z-index: 9999;
+  height:120px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header img{
+  margin-right: 50px;
+}
+ul{
+  list-style: none;
+}
+
+ul li{
+  display: inline-block;
+}
+
+.selected{
+  color:#f9d03f;
 }
 
 header::after{
   content:'';
-  background: #000;
+  background: #fff;
   transform: rotate(45deg);
   width:20px;
   height:20px;
   position: absolute;
   bottom:-10px;
   left:60%;
+  z-index: 99;
 }
+
+
 
 #jumbotron{
   width:100%;
-  min-height: 480px;
+  min-height: 90vh;
   background-image: url('../resources/home-slider-62528242.jpg');
   background-size:cover;
-  margin-top:80px;
   position: relative;
 }
 
@@ -48,19 +65,20 @@ header::after{
 .banner{
   background-color: #fed23f;
   text-align: center;
-  height: 80px;
+  height: 140px;
 }
 
 .banner button{
   position: relative;
-  top:50px;
+  top:100px;
 }
 
 #specialist ,#explore , #corevalue{
   width:100%;
   background-color: white;
+  margin-top:80px ;
   text-align: center;
-  margin-top:80px;
+  padding-bottom:50px;
 }
 #specialist p  , #explore p , #corevalue p{
   width:50%;
@@ -117,6 +135,10 @@ header::after{
   left: -20%;
   top: 100%;
 }
+.wraptwo::before ,.wraptwo::after{
+  box-shadow: 0 0px 0 80px #bcbcbc;
+
+}
 
 .wrapinfo:after {
   bottom: 100%;
@@ -166,6 +188,7 @@ header::after{
 
 .wraptwo{
   background-image: url('../resources/home-parallax-144609983.jpg');
+  height:850px;
 }
 
 .wraptwo div{
@@ -177,3 +200,6 @@ header::after{
   height:50%;
   text-align:center;
 }
+ .silver{
+   background-color: #bcbcbc;
+ }

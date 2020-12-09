@@ -10,9 +10,13 @@
   </head>
   <body>
 
-    <header id="root">
-
+    <header id="navbar">
+      <img :src="img" alt="">
+      <ul class="dropdowns">
+        <li v-for="(link,index) in links" :class="{selected:link.active}" @click="activate(index)">{{link.name}}</li>
+      </ul>
     </header>
+
     <section id="jumbotron">
       <div class="centered jumbosection">
         <h2>BUILDING INSPIRING SPACES</h2>
@@ -99,6 +103,7 @@
           <span> <strong>VIEW ALL PROJECTS</strong> </span>
           <hr class="bottomhr">
         </section>
+        <div class="silver">
 
         <section id="corevalue">
           <h3>Our Core Values</h3>
@@ -143,6 +148,67 @@
           </div>
         </section>
 
+        <section id="corevalue">
+          <h3>Our Core Values</h3>
+          <hr class="upperhr">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. quis nostrud exercitation ullamco</p>
+          <div class="container">
+            <div class="corebox">
+              <i class="far fa-building"></i>
+              <h3>Buildings</h3>
+              <p>Quis autem vel eumn iure reprendit qui in ea voluptate velit esse quam nihil molestiae consequatur</p>
+            </div>
+            <div class="corebox">
+              <i class="far fa-building"></i>
+              <h3>Buildings</h3>
+              <hr>
+              <p>Quis autem vel eumn iure reprendit qui in ea voluptate velit esse quam nihil molestiae consequatur</p>
+            </div>
+            <div class="corebox">
+              <i class="far fa-building"></i>
+              <h3>Buildings</h3>
+              <hr>
+              <p>Quis autem vel eumn iure reprendit qui in ea voluptate velit esse quam nihil molestiae consequatur</p>
+            </div>
+            <div class="corebox">
+              <i class="far fa-building"></i>
+              <h3>Buildings</h3>
+              <hr>
+              <p>Quis autem vel eumn iure reprendit qui in ea voluptate velit esse quam nihil molestiae consequatur</p>
+            </div>
+          </div>
+        </section>
+      </div>
+       <section id="partners">
+         <h3>Trusted Partners</h3>
+         <hr class="upperhr">
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. quis nostrud exercitation ullamco</p>
+         <div class="logos">
+          <img src="resources/home-logo11-219096700-320x202.png" alt="">
+          <img src="resources/home-logo10-219096700-320x202.png" alt="">
+          <img src="resources/home-logo2-219096700-320x202.png" alt="">
+          <img src="resources/home-logo1-219096700-320x202.png" alt="">
+          <img src="resources/home-logo9-219096700-320x202.png" alt="">
+         </div>
+       </section>
+       <section id="bottomjumbo">
+         <div class="">
+           <h2>Building Inspiring Spaces</h2>
+           <hr class="upperhr">
+           <p>Vivamus sed consectetur tellus dolo sit amet, consectetur asipiscing lorem elit sapid ipsum ficilis uns.</p>
+         </div>
+         <div class="">
+           <button type="button" name="button">GET A FREE QUOTES</button>
+           <span>Only takes a few seconds!</span>
+         </div>
+       </section>
+       <footer id="footer">
+
+
+         <section id="subfooter">
+           
+         </section>
+       </footer>
 
     <script src="js/script.js" charset="utf-8"></script>
   </body>
