@@ -401,6 +401,7 @@ header::after{
   margin:10px auto;
   color:#666668;
   text-align: center;
+  padding-bottom: 50px;
 }
 
 #partners p{
@@ -420,4 +421,46 @@ header::after{
 .logos img{
   width:18%;
   margin:0 1%;
+}
+
+#bottomjumbo{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../resources/about-call-to-action-57862405.jpg');
+  background-size: cover;
+  min-height: 450px;
+}
+
+.inspiring{
+  width:50%;
+  text-align: left;
+  color:#fff;
+}
+
+.inspiring hr{
+  margin:25px 0;
+  width:50%;
+}
+
+.inspiring p{
+  line-height: 2.5;
+  font-size: 12px;
+}
+.buttons{
+  width:30%;
+  text-align: center;
+  color:#fff;
+}
+
+.buttons button{
+  color:#666668;
+  padding:15px 25px;
+  margin-bottom: 20px;
+}
+
+footer{
+  background-color: #1e1e1e;
+  border-top:10px solid #31312f;
 }
