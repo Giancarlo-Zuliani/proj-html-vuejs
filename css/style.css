@@ -586,6 +586,23 @@ footer{
   background-color: #1e1e1e;
   border-top:10px solid #31312f;
 }
+footer section{
+  display:flex;
+  width:80%;
+  margin:25px auto 0;
+}
+footer section div{
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin:50px auto;
+  width:25%;
+}
+
+footer ul{
+  list-style: none;
+}
 
 .corebox:hover .corei{
   background-color:#fed23f;
@@ -594,4 +611,25 @@ footer{
 
 .corebox:hover h5{
   color:#fede6f;
+}
+
+#subfooter{
+  height:80px;
+  color:#666665;
+  background-color: #000;
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+#copyright{
+  margin-left:10%;
+}
+
+#social{
+  margin-right:10%;
+}
+
+i{
+  cursor:pointer;
 }
