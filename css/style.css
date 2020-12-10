@@ -197,7 +197,7 @@ header::after{
   top: 100%;
 }
 .wraptwo::before ,.wraptwo::after{
-  box-shadow: 0 0px 0 80px #bcbcbc;
+  box-shadow: 0 0px 0 80px #f0ede6;
 
 }
 
@@ -249,27 +249,149 @@ header::after{
 }
 #corevalue{
   padding-top:80px;
-  background-color: #bcbcbc;
+  background-color: #f0ede6;
 }
 
-.corebox{
-
+#corevalue h1{
+  font-weight: 100;
+  letter-spacing: 5px;
 }
 
+ #corevalue hr{
+   width:30%;
+ }
+
+ .subtitle{
+   width:50%;
+   color:#bcbcbc;
+   line-height: 40px;
+ }
+
+ .corebox i{
+   font-size: 30px;
+   padding:30px;
+   border-radius: 100%;
+ }
+.bgcornflower{
+  background-color: #5ea3e7;
+}
+.bgvenice{
+  background-color: #045287;
+}
+.bgorange{
+  background-color: #fe6f1d;
+}
+
+.bggreen{
+  background-color: #a7cf47;
+  padding-left:35px;
+  padding-right: 35px;
+}
+.corebox h5{
+  color:#bcbcbc;
+  margin:15px auto;
+  letter-spacing: 2px;
+}
+.corebox hr{
+  width:10%;
+  color:#bcbcbc;
+  margin:10px auto;
+}
+
+.coreboxp{
+  width:80%;
+  letter-spacing: 3px;
+  color:#bcbcbc;
+}
 .wraptwo{
   background-image: url('../resources/home-parallax-144609983.jpg');
   height:850px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:white;
+  text-align: center;
 }
 
-.wraptwo div{
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform: translate(-50%,-50%);
-  width:60%;
-  height:50%;
-  text-align:center;
+.testimonial img{
+  border-radius: 50%;
+}
+
+.testimonial hr{
+ width:40%;
+}
+.testimonial p{
+  width:80%;
+  margin:20px auto;
+  line-height: 40px;
+}
+
+#news{
+  text-align: center;
+  width:100%;
+  margin-left:auto;
+}
+
+.newscontainer{
+  width: 70%;
+  margin:25px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.newsbox{
+  width:30%;
+  background-color: white;
+  margin:3%;
+  text-align: left;
+  color:#666665;
+}
+
+.newsbox h4 , .newsbox h6{
+  margin:15px;
+}
+
+.newsbox hr{
+  width: 70%;
+  margin:15px auto;
+}
+
+.newsbox p{
+  margin:15px;
+  font-size: 10px;
+  line-height: 3;
+}
+
+.newsbox img{
+  width:100%;
+  height:
+  background-size: contain;
 }
  .silver{
-   background-color: #bcbcbc;
+   background-color:#f0ede6 ;
  }
+
+.whitehr{
+  width:40%;
+  color: #fff;
+}
+
+.articles{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:80%;
+  margin:15px auto;
+  padding:50px;
+  padding-bottom: 80px;
+}
+
+#news span{
+  position: relative;
+  top:40px;
+  font-weight: bolder;
+  color:#666668;
+  cursor: pointer;
+}
