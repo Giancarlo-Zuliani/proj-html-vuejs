@@ -274,15 +274,53 @@ header::after{
 }
 
 .explorebox{
-  max-width:30%;
+  max-width:32%;
   margin:0;
+  position: relative;
+  margin-right:15px;
+}
+
+.explorelayover{
+  width:100%;
+  height:100%;
+  background-color: #fed03d;
+  color:#fff;
+  position: absolute;
+  left:0;
+  top:0;
+  display: none;
+}
+
+.explorebox:hover .explorelayover{
+  display: block;
+}
+
+.explorelayover div{
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  height:50%;
+  width:50%;
+}
+
+.explorelayover div i{
+  color:#fed03d;
+  background-color: #fff;
+  padding:10px;
+  margin:10px 5px;
+  border-radius: 50%;
+}
+
+.explorelayover div h3{
+  font-weight: 100;
+  margin-bottom: 20px;
 }
 
 .explorebox img{
-  max-width: 100%;
-  max-height: 220px;
+  width: 100%;
+  height: 100%;
   background-size: cover;
-  padding:10px;
 }
 
 .bottomhr{
@@ -305,6 +343,7 @@ header::after{
   background-color: #f0ede6;
 }
 
+
 #corevalue h1{
   font-weight: 100;
   letter-spacing: 5px;
@@ -320,11 +359,12 @@ header::after{
    line-height: 40px;
  }
 
- .corebox i{
-   font-size: 30px;
-   padding:30px;
-   border-radius: 100%;
- }
+.corebox i{
+ font-size: 30px;
+ padding:30px;
+ border-radius: 100%;
+}
+
 .bgcornflower{
   background-color: #5ea3e7;
 }
@@ -392,6 +432,7 @@ header::after{
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  position:relative;
 }
 
 .newsbox{
@@ -419,7 +460,7 @@ header::after{
 
 .newsbox img{
   width:100%;
-  height:
+  height:20%;
   background-size: contain;
 }
  .silver{
@@ -447,6 +488,33 @@ header::after{
   font-weight: bolder;
   color:#666668;
   cursor: pointer;
+}
+.newslayover{
+  width:100%;
+  position:relative;
+  height:20%;
+}
+
+.newslayover div{
+  position:absolute;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  background-color:#fed23f;
+  display: none;
+  text-align: center;
+}
+.newslayover div i{
+  color:#fed03d;
+  background-color: #fff;
+  padding:10px;
+  margin:10px 5px;
+  border-radius: 50%;
+}
+
+.newsbox:hover .newslayover div{
+  display: block;
 }
 
 #partners{
@@ -517,4 +585,13 @@ header::after{
 footer{
   background-color: #1e1e1e;
   border-top:10px solid #31312f;
+}
+
+.corebox:hover .corei{
+  background-color:#fed23f;
+  color:white;
+}
+
+.corebox:hover h5{
+  color:#fede6f;
 }
