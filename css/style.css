@@ -168,6 +168,14 @@ header::after{
 .wrapone{
   background-image: url('../resources/home-244125289.jpg');
 }
+.infos i , .infos h1{
+  font-size: 45px;
+  color:#fed23f;
+}
+
+.infos h5{
+  color:#bcbcbc;
+}
 
 .wrapinfo{
   position: relative;
@@ -200,7 +208,7 @@ header::after{
 
 .infos{
   z-index:99;
-  height:10%;
+  margin:auto 15px;
   align-self: center;
   text-align: center;
 }
@@ -208,28 +216,37 @@ header::after{
 #explore .container{
   display: flex;
   justify-content: center;
+  align-items: center;
+  width:50%;
 }
 
 .explorebox{
-  width:32%;
+  max-width:30%;
   margin:0;
 }
 
 .explorebox img{
+  max-width: 100%;
   max-height: 220px;
   background-size: cover;
+  padding:10px;
 }
 
 .bottomhr{
   color: #f0ede6;
   display: inline-block;
-  width:32%;
+  width:30%;
 }
 
 #explore{
   margin-bottom: 100px;
 }
-
+#explore span{
+  color:#bcbcbc;
+  position:relative;
+  top:50px;
+  cursor:pointer;
+}
 #corevalue{
   padding-top:80px;
   background-color: #bcbcbc;
