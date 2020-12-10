@@ -4,22 +4,28 @@ const header = new Vue({
     img:'resources/construction_logo.png',
     links:[{
       name:'HOME',
-      active:true
+      active:true,
+      href:'#'
     },{
       name:'ABOUT',
-      active:false
+      active:false,
+      href:'#infopannel'
     },{
       name:'SERVICES',
-      active:false
+      active:false,
+      href:'#explore'
     },{
       name:'WORK',
-      active:false
+      active:false,
+      href:'#corevalue'
     },{
       name:'ARTICLES',
-      active:false
+      active:false,
+      href:'#news'
     },{
       name:'GET QUOTE',
-      active:false
+      active:false,
+      href:'#bottonjumbo'
     }]
   },
   methods:{
@@ -35,14 +41,38 @@ const header = new Vue({
 });
 
 const footer = new Vue({
-  el:'footer',
+  el:'#footer',
   data:{
-    contents :[
-      ['<img src="resources/footer-logo.png"  alt="logo">',
-      '<p>We are specialist in the construction of unique and exclusive properties. Our work inspires .We pride ourselves on delivering outstanding quality and design for leading clients across the world.</p>',
-      '<button type="button" name="button">LEARN MORE</button>'],
-      ['<blockquote class="twitter-tweet" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">Do you need sublime WordPress hosting for your next website? Take advantage of exclusive partner offers that we have secured just for you, &amp; launch your site in seconds with <a href="https://twitter.com/hashtag/avada?src=hash&amp;ref_src=twsrc%5Etfw">#avada</a> on WP Engine hosting &amp; get 30% Off this Black Friday <a href="https://t.co/HBFiOtlnez">https://t.co/HBFiOtlnez</a> <a href="https://twitter.com/hashtag/BlackFriday2020?src=hash&amp;ref_src=twsrc%5Etfw">#BlackFriday2020</a> <a href="https://t.co/fgqRzbr6Dg">pic.twitter.com/fgqRzbr6Dg</a></p>&mdash; ThemeFusion (@Theme_Fusion) <a href="https://twitter.com/Theme_Fusion/status/1332383066631892993?ref_src=twsrc%5Etfw">November 27, 2020</a></blockquote>']
-    ]
+    social:['fab fa-facebook-f','fab fa-twitter','fab fa-youtube','fab fa-instagram'],
+    left:[{
+      type:'img',
+      content:'resources/footer-logo.png'
+    },{
+      type:'par',
+      content:'We are specialists in the construction of unique and exclusive proprieties . Our work inspires. We pride ourselves on delivering outstanding quality and design for leading clients across the world.'
+    },{
+      type:'button',
+      content:'LEARN MORE'
+    }],
+    contacts: [{
+      icon:'fas fa-globe',
+      adress:'Corporate Locatioon 1600 Amphotheatre Parkway London WC1 1BA'
+    },{
+      icon:'fas fa-home',
+      adress:'Residential Location 9521 Broadsberry avenue Paddington RC7 9ZA'
+    },{
+      icon:'fas fa-phone',
+      adress:'1.800.458.556 / 1.800.532.2112'
+    },{
+      icon:'far fa-envelope',
+      adress:'info@your-domain.com'
+    },{
+      icon:'far fa-clock',
+      adress:'Monday - Fryday:9:00 AM - 6:00 PM'
+    },{
+      icon:'far fa-clock',
+      adress:'Saturday - Sunday:9:00 AM - 12:00PM'
+    }]
 
   }
 })
