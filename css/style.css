@@ -2,7 +2,9 @@
   box-sizing: border-box;
   padding:0;
   margin:0;
-  font-family: 'nunito' , sans-serif;
+  font-family: source-sans-pro, sans-serif;
+font-style: normal;
+font-weight: 200;
 }
 
 a{
@@ -650,6 +652,52 @@ i{
   width:25%;
 }
 
-.contacts div span{
+.contacts div p{
   font-variant-numeric: oldstyle-nums;
+}
+
+.leftfooter *{
+  min-width:100%;
+}
+
+.leftfooter p{
+  width:100%;
+}
+
+blockquote{
+  width:25%;
+  margin:80px 5%;
+}
+
+.contacts{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contactcontainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:20px auto;
+}
+
+.map img{
+  max-width: 100%;
+}
+
+.contacts i {
+  margin-right:20px;
+}
+
+
+.twitter-tweet{
+  max-width:30%;
+  margin-top:80px;
+}
+
+#footer div{
+  max-width:60%;
+  margin:5% 25px;
 }

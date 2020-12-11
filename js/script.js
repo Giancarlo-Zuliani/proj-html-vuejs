@@ -44,6 +44,7 @@ const footer = new Vue({
   el:'#footer',
   data:{
     social:['fab fa-facebook-f','fab fa-twitter','fab fa-youtube','fab fa-instagram'],
+
     left:[{
       type:'img',
       content:'resources/footer-logo.png'
@@ -54,6 +55,7 @@ const footer = new Vue({
       type:'button',
       content:'LEARN MORE'
     }],
+
     contacts: [{
       icon:'fas fa-globe',
       adress:'Corporate Locatioon 1600 Amphotheatre Parkway London WC1 1BA'
