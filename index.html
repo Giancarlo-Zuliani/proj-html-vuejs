@@ -10,14 +10,14 @@
     <title>Constructor</title>
   </head>
   <body>
-
+    <!-- HEADER PARTE SUPERIORE , DATI CARICATI DA SCRIPT.JS -->
     <header id="navbar">
       <img :src="img" alt="">
       <ul class="dropdowns">
         <li v-for="(link,index) in links" :class="{selected:link.active}" @click="activate(index)"> <a :href="link.href">{{link.name}}</a>  </li>
       </ul>
     </header>
-
+    <!-- FIRST SECTION ,JUMBOTRON, PRIMA GROSSA IMMAGINE CENTRALE CON DUE PULSANTI E TITOLONE -->
     <section id="jumbotron">
       <div class="">
         <h2>BUILDING INSPIRING SPACES</h2>
@@ -25,19 +25,32 @@
         <button type="button" name="button" class="greybtn">EXPLORE RECENT WORK</button>
         <button type="button" name="button" class="ochrabtn">GET A QUOTE TODAY</button>
       </div>
+      <!-- DEMOS BOX ON TOP RIGHT-->
+      <div class="demos">
+        <div class="">
+          <i class="fas fa-folder-plus"></i>
+          <h6>Demos</h6>
+        </div>
+        <div class="">
+          <span>$</span><h4>39</h4>
+          <h6>On Sale</h6>
+        </div>
+      </div>
     </section>
-
+    <!-- JUMBOTRON FOOTER, SEZIONE GIALLA SOTTO JUMBOTRON CON PULSANTE  -->
     <div class="banner">
       <h3>Do You Have A Constructor Project We Can Help With?</h3>
       <button type="button" class="greybtn" name="button">GET A FREE QUOTE</button>
     </div>
-
+    <!-- SPECIALIST SECTION, SECONDA SEZIONE CON 4 CONTENITORI CHE CAMBIANO AL PASSAGGIO DEL MOUSE -->
     <section id="specialist">
-      <h3>Specialist In Modern Construction</h3>
+      <h1>Specialist In Modern Construction</h1>
       <hr class="upperhr">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
       <div class="container">
+        <!-- FIRST BOX -->
         <div class="box">
+          <!-- LAYOVER,PARTE CHE APPARE AL PASSAGGIO DEL MOUSE -->
           <div class="specialistlayover">
             <div class="">
               <h4>ARTFULLY CRAFTED</h4>
@@ -49,7 +62,9 @@
           <h3>Buildings</h3>
           <p>Quis autem vel eumn iure reprendit qui in ea voluptate velit esse quam nihil molestiae consequatur</p>
         </div>
+        <!-- SECOND BOX -->
         <div class="box">
+          <!-- PARTE CHE APPARE AL PASSAGGIO DEL MOUSE -->
           <div class="specialistlayover">
             <div class="">
               <h4>ARTFULLY CRAFTED</h4>
@@ -61,7 +76,9 @@
           <h3>Renovate</h3>
           <p>Quis autem vel eumn iure reprendit qui in ea voluptate velit esse quam nihil molestiae consequatur</p>
         </div>
+        <!-- THIRD BOX -->
         <div class="box">
+          <!-- PARTE CHE APPARE AL PASSAGGIO DEL MOUSE -->
           <div class="specialistlayover">
             <div class="">
               <h4>ARTFULLY CRAFTED</h4>
@@ -73,7 +90,9 @@
           <h3>Construct</h3>
           <p>Quis autem vel eumn iure reprendit qui in ea voluptate velit esse quam nihil molestiae consequatur</p>
         </div>
+        <!-- FOURTH BOX -->
         <div class="box">
+          <!-- PARTE CHE APPARE AL PASSAGGIO DEL MOUSE -->
           <div class="specialistlayover">
             <div class="">
               <h4>ARTFULLY CRAFTED</h4>
@@ -87,211 +106,227 @@
         </div>
       </div>
     </section>
-
-        <section id="infopannel">
-          <div class="wrapinfo wrapone">
-            <div class="infos">
-              <i class="fas fa-suitcase"></i>
-              <h1>3534</h1>
-              <h5>PLANNING APPLICATION</h5>
-            </div>
-            <div class="infos">
-              <i class="far fa-building"></i>
-              <h1>896</h1>
-              <h5>PLANNING APPLICATION</h5>
-            </div>
-            <div class="infos">
-              <i class="fas fa-users"></i>
-              <h1>172</h1>
-              <h5>PLANNING APPLICATION</h6>
-            </div>
-            <div class="infos">
-              <i class="fas fa-globe"></i>
-              <h1>19</h1>
-              <h5>PLANNING APPLICATION</h5>
-            </div>
-          </div>
-        </section>
-
-        <section id="explore">
-          <h3>Explore Recent Work</h3>
-          <hr class="upperhr">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. quis nostrud exercitation ullamco</p>
-          <div class="container">
-            <div class="explorebox">
-              <div class="explorelayover">
-                <div class="">
-                  <i class="fas fa-link"></i>
-                  <i class="fas fa-search"></i>
-                  <h3>Florida Health Facility</h3>
-                  <h6>Commercial</h6>
-                </div>
-              </div>
-              <img src="resources/project2-featured-15013609.jpg" alt="">
-            </div>
-            <div class="explorebox">
-              <div class="explorelayover">
-                <div class="">
-                  <i class="fas fa-link"></i>
-                  <i class="fas fa-search"></i>
-                  <h3>Florida Health Facility</h3>
-                  <h6>Commercial</h6>
-                </div>
-              </div>
-              <img src="resources/project1-featured-294276386.jpg" alt="">
-            </div>
-            <div class="explorebox">
-              <div class="explorelayover">
-                <div class="">
-                  <i class="fas fa-link"></i>
-                  <i class="fas fa-search"></i>
-                  <h3>Florida Health Facility</h3>
-                  <h6>Commercial</h6>
-                </div>
-              </div>
-              <img src="resources/project3-featured-189023420.jpg" alt="">
-            </div>
-          </div>
-          <hr class="bottomhr">
-          <span> <strong>VIEW ALL PROJECTS</strong> </span>
-          <hr class="bottomhr">
-        </section>
-        <div class="silver">
-
-        <section id="corevalue">
-          <h1>Our Core Values</h1>
-          <hr class="upperhr">
-          <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. quis nostrud exercitation ullamco</p>
-          <div class="container">
-            <div class="corebox">
-              <i class="bgcornflower corei fas fa-home"></i>
-              <h5>Great Services</h5>
-              <hr>
-              <p class="coreboxp">Quis autem vel eumn iure reprendit qui in ea voluptate velit esse quam nihil molestiae consequatur</p>
-            </div>
-            <div class="corebox">
-              <i class="bgvenice corei fas fa-bahai"></i>
-              <h5>Highest Standards</h5>
-              <hr>
-              <p class="coreboxp">Quis autem vel eumn iure reprendit qui in ea voluptate velit esse quam nihil molestiae consequatur</p>
-            </div>
-            <div class="corebox">
-              <i class=" bgorange corei fas fa-users"></i>
-              <h5>Professional Team</h5>
-              <hr>
-              <p class="coreboxp">Quis autem vel eumn iure reprendit qui in ea voluptate velit esse quam nihil molestiae consequatur</p>
-            </div>
-            <div class="corebox">
-              <i class="bggreen corei far fa-lightbulb"></i>
-              <h5>Creative Solutions</h5>
-              <hr>
-              <p class="coreboxp">Quis autem vel eumn iure reprendit qui in ea voluptate velit esse quam nihil molestiae consequatur</p>
-            </div>
-          </div>
-        </section>
-
-        <section id="infopannel">
-          <div class="wrapinfo wraptwo">
-            <div class="testimonial">
-              <h2>Our Home Owners Say</h2>
-              <hr class="upperhr">
-              <img src="resources/home-testimonial-113165296.jpg" alt="">
-              <p> <i>"no man but feels more of a man in the world if he have but a bit of ground that can call his own. However small it is on the surface, it is four thousand miles deep; and that is a very handsome property"</i> </p>
-              <h4> <strong>HARRY SMITH - NEW HOME OWNER</strong> </h4>
-            </div>
-          </div>
-        </section>
-
-        <section id="news">
-          <h3>Latest News</h3>
-          <hr class="upperhr">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. quis nostrud exercitation ullamco</p>
-          <div class="newscontainer">
-            <div class="newsbox">
-              <div class="newslayover">
-                <div class="">
-                  <i class="fas fa-link"></i>
-                  <i class="fas fa-search"></i>
-                  <h4>Redeveloping Florida's  Remote Southern Coast</h4>
-                  <h6>Architecture,Buildings,Constuction,News</h6>
-                </div>
-                <img src="resources/blog-post-134132600.jpg" alt="">
-              </div>
-              <h4>Redeveloping Florida's  Remote Southern Coast</h4>
-              <h6>December 7th,2015</h6>
-              <hr class="newshr">
-              <p>Technology is Here to Stay Lorem ipsum solor sit amet, consectetur adipiscing elit.Vivamus purus nisl, elementum vitae consequat at .tristique ut enim. Sed ut dignissim leo . Nullam sed metus id sapiem faucibus rhoncus sed</p>
-            </div>
-            <div class="newsbox">
-              <div class="newslayover">
-                <div class="">
-                  <i class="fas fa-link"></i>
-                  <i class="fas fa-search"></i>
-                  <h4>Redeveloping Florida's  Remote Southern Coast</h4>
-                  <h6>Architecture,Buildings,Constuction,News</h6>
-                </div>
-                <img src="resources/blog-post-92486644.jpg" alt="">
-              </div>
-              <h4>Redeveloping Florida's  Remote Southern Coast</h4>
-              <h6>December 7th,2015</h6>
-              <hr class="newshr">
-              <p>Technology is Here to Stay Lorem ipsum solor sit amet, consectetur adipiscing elit.Vivamus purus nisl, elementum vitae consequat at .tristique ut enim. Sed ut dignissim leo . Nullam sed metus id sapiem faucibus rhoncus sed</p>
-            </div>
-            <div class="newsbox">
-              <div class="newslayover">
-                <div class="">
-                  <i class="fas fa-link"></i>
-                  <i class="fas fa-search"></i>
-                  <h4>Redeveloping Florida's  Remote Southern Coast</h4>
-                  <h6>Architecture,Buildings,Constuction,News</h6>
-                </div>
-                <img src="resources/blog-post-332773904.jpg" alt="">
-              </div>
-              <h4>Redeveloping Florida's  Remote Southern Coast</h4>
-              <h6>December 7th,2015</h6>
-              <hr class="newshr">
-              <p>Technology is Here to Stay Lorem ipsum solor sit amet, consectetur adipiscing elit.Vivamus purus nisl, elementum vitae consequat at .tristique ut enim. Sed ut dignissim leo . Nullam sed metus id sapiem faucibus rhoncus sed</p>
-            </div>
-          </div>
-          <div class="articles">
-            <hr class="whitehr">
-            <span>VIEW ALL ARTICLES</span>
-            <hr class="whitehr">
-          </div>
-        </section>
+    <!-- INFOPANNEL, PANNELLO STATISTICHE CONCAVO -->
+    <section id="infopannel">
+      <div class="wrapinfo wrapone">
+        <div class="infos">
+          <i class="fas fa-suitcase"></i>
+          <h1>3534</h1>
+          <h5>PLANNING APPLICATION</h5>
+        </div>
+        <div class="infos">
+          <i class="far fa-building"></i>
+          <h1>896</h1>
+          <h5>PLANNING APPLICATION</h5>
+        </div>
+        <div class="infos">
+          <i class="fas fa-users"></i>
+          <h1>172</h1>
+          <h5>PLANNING APPLICATION</h6>
+        </div>
+        <div class="infos">
+          <i class="fas fa-globe"></i>
+          <h1>19</h1>
+          <h5>PLANNING APPLICATION</h5>
+        </div>
       </div>
-
+    </section>
+    <!-- EXPLORE SECTION, SEZIONE GALLERIA LAVORI SVOLTI CON INFOGRAFICA AL PASSAGGIO DEL MOUSE -->
+    <section id="explore">
+      <h1>Explore Recent Work</h1>
+      <hr class="upperhr">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. quis nostrud exercitation ullamco</p>
+      <div class="container">
+        <!-- FIRST WORK -->
+        <div class="explorebox">
+          <!-- INFOGRAFICA CHE APPARE AL PASSAGGIO DEL MOUSE -->
+          <div class="explorelayover">
+            <div class="">
+              <i class="fas fa-link"></i>
+              <i class="fas fa-search"></i>
+              <h3>Florida Health Facility</h3>
+              <h6>Commercial</h6>
+            </div>
+          </div>
+          <img src="resources/project2-featured-15013609.jpg" alt="">
+        </div>
+        <!-- SECOND WORK -->
+        <div class="explorebox">
+          <!-- INFOGRAFICA CHE APPARE AL PASSAGGIO DEL MOUSE -->
+          <div class="explorelayover">
+            <div class="">
+              <i class="fas fa-link"></i>
+              <i class="fas fa-search"></i>
+              <h3>Florida Health Facility</h3>
+              <h6>Commercial</h6>
+            </div>
+          </div>
+          <img src="resources/project1-featured-294276386.jpg" alt="">
+        </div>
+        <!-- THIRD WORK -->
+        <div class="explorebox">
+        <!-- INFOGRAFICA CHE APPARE AL PASSAGGIO DEL MOUSE -->
+          <div class="explorelayover">
+            <div class="">
+              <i class="fas fa-link"></i>
+              <i class="fas fa-search"></i>
+              <h3>Florida Health Facility</h3>
+              <h6>Commercial</h6>
+            </div>
+          </div>
+          <img src="resources/project3-featured-189023420.jpg" alt="">
+        </div>
+      </div>
+      <hr class="bottomhr">
+      <span> <strong>VIEW ALL PROJECTS</strong> </span>
+      <hr class="bottomhr">
+    </section>
+    <!-- DIV FOR BACKGROUND COLOR -->
+    <div class="silver">
+      <!-- CORE VALUES SECTION, SEZIONE CENTRALE CON 4 ELEMENTI COLORATI -->
+      <section id="corevalue">
+        <h1>Our Core Values</h1>
+        <hr class="upperhr">
+        <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. quis nostrud exercitation ullamco</p>
+        <div class="container">
+          <!-- FIRST ELEMENT -->
+          <div class="corebox">
+            <i class="bgcornflower corei fas fa-home"></i>
+            <h5>Great Services</h5>
+            <hr>
+            <p class="coreboxp">Quis autem vel eumn iure reprendit qui in ea voluptate velit esse quam nihil molestiae consequatur</p>
+          </div>
+          <!-- SECOND ELEMENT -->
+          <div class="corebox">
+            <i class="bgvenice corei fas fa-bahai"></i>
+            <h5>Highest Standards</h5>
+            <hr>
+            <p class="coreboxp">Quis autem vel eumn iure reprendit qui in ea voluptate velit esse quam nihil molestiae consequatur</p>
+          </div>
+          <!-- THIRD ELEMENT -->
+          <div class="corebox">
+            <i class=" bgorange corei fas fa-users"></i>
+            <h5>Professional Team</h5>
+            <hr>
+            <p class="coreboxp">Quis autem vel eumn iure reprendit qui in ea voluptate velit esse quam nihil molestiae consequatur</p>
+          </div>
+          <!-- FOURTH ELEMENT -->
+          <div class="corebox">
+            <i class="bggreen corei far fa-lightbulb"></i>
+            <h5>Creative Solutions</h5>
+            <hr>
+            <p class="coreboxp">Quis autem vel eumn iure reprendit qui in ea voluptate velit esse quam nihil molestiae consequatur</p>
+          </div>
+        </div>
+      </section>
+      <!-- SECOND INFOPANNEL, SECONDO PANNELLO CONCAVO -->
+      <section id="infopannel">
+        <div class="wrapinfo wraptwo">
+          <div class="testimonial">
+            <h2>Our Home Owners Say</h2>
+            <hr class="upperhr">
+            <img src="resources/home-testimonial-113165296.jpg" alt="">
+            <p> <i>"no man but feels more of a man in the world if he have but a bit of ground that can call his own. However small it is on the surface, it is four thousand miles deep; and that is a very handsome property"</i> </p>
+            <h4> <strong>HARRY SMITH - NEW HOME OWNER</strong> </h4>
+          </div>
+        </div>
+      </section>
+      <!-- NEWS SECTION ,  SEZIONE NEWS CON 3 ELEMENTI -->
+      <section id="news">
+        <h3>Latest News</h3>
+        <hr class="upperhr">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. quis nostrud exercitation ullamco</p>
+        <!-- NEWS CONTAINER -->
+        <div class="newscontainer">
+          <div class="newsbox">
+            <!-- DESCRIZIONE CHE APPARE AL PASSAGGIO DEL MOUSE -->
+            <div class="newslayover">
+              <div class="">
+                <i class="fas fa-link"></i>
+                <i class="fas fa-search"></i>
+                <h4>Redeveloping Florida's  Remote Southern Coast</h4>
+                <h6>Architecture,Buildings,Constuction,News</h6>
+              </div>
+              <img src="resources/blog-post-134132600.jpg" alt="">
+            </div>
+            <h4>Redeveloping Florida's  Remote Southern Coast</h4>
+            <h6>December 7th,2015</h6>
+            <hr class="newshr">
+            <p>Technology is Here to Stay Lorem ipsum solor sit amet, consectetur adipiscing elit.Vivamus purus nisl, elementum vitae consequat at .tristique ut enim. Sed ut dignissim leo . Nullam sed metus id sapiem faucibus rhoncus sed</p>
+          </div>
+          <!-- NEWS CONTAINER -->
+          <div class="newsbox">
+            <!-- DESCRIZIONE CHE APPARE AL PASSAGGIO DEL MOUSE -->
+            <div class="newslayover">
+              <div class="">
+                <i class="fas fa-link"></i>
+                <i class="fas fa-search"></i>
+                <h4>Redeveloping Florida's  Remote Southern Coast</h4>
+                <h6>Architecture,Buildings,Constuction,News</h6>
+              </div>
+              <img src="resources/blog-post-92486644.jpg" alt="">
+            </div>
+            <h4>Redeveloping Florida's  Remote Southern Coast</h4>
+            <h6>December 7th,2015</h6>
+            <hr class="newshr">
+            <p>Technology is Here to Stay Lorem ipsum solor sit amet, consectetur adipiscing elit.Vivamus purus nisl, elementum vitae consequat at .tristique ut enim. Sed ut dignissim leo . Nullam sed metus id sapiem faucibus rhoncus sed</p>
+          </div>
+          <!-- NEWS CONTAINER -->
+          <div class="newsbox">
+            <!-- DESCRIZIONE CHE APPARE AL PASSAGGIO DEL MOUSE -->
+            <div class="newslayover">
+              <div class="">
+                <i class="fas fa-link"></i>
+                <i class="fas fa-search"></i>
+                <h4>Redeveloping Florida's  Remote Southern Coast</h4>
+                <h6>Architecture,Buildings,Constuction,News</h6>
+              </div>
+              <img src="resources/blog-post-332773904.jpg" alt="">
+            </div>
+            <h4>Redeveloping Florida's  Remote Southern Coast</h4>
+            <h6>December 7th,2015</h6>
+            <hr class="newshr">
+            <p>Technology is Here to Stay Lorem ipsum solor sit amet, consectetur adipiscing elit.Vivamus purus nisl, elementum vitae consequat at .tristique ut enim. Sed ut dignissim leo . Nullam sed metus id sapiem faucibus rhoncus sed</p>
+          </div>
+        </div>
+        <!-- BOTTOM LINK -->
+        <div class="articles">
+          <hr class="whitehr">
+          <span>VIEW ALL ARTICLES</span>
+          <hr class="whitehr">
+        </div>
+      </section>
+    </div>
+    <!-- OUR PARTNERS SECTION ,SEZIONE CON I LOGHI DEI VARI PARTNERS -->
      <section id="partners">
-         <h2>Trusted Partners</h2>
+       <h2>Trusted Partners</h2>
+       <hr class="upperhr">
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. quis nostrud exercitation ullamco</p>
+       <div class="logos">
+         <img src="resources/home-logo11-219096700-320x202.png" alt="">
+         <img src="resources/home-logo10-219096700-320x202.png" alt="">
+         <img src="resources/home-logo2-219096700-320x202.png" alt="">
+         <img src="resources/home-logo1-219096700-320x202.png" alt="">
+         <img src="resources/home-logo9-219096700-320x202.png" alt="">
+       </div>
+     </section>
+     <!-- SECOND JUMBOTRON , SECONDA IMMAGINE GROSSA PRIMA DELLA PARTE FINALE -->
+      <section id="bottomjumbo">
+       <div class="inspiring">
+         <h2>Building Inspiring Spaces</h2>
          <hr class="upperhr">
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. quis nostrud exercitation ullamco</p>
-         <div class="logos">
-          <img src="resources/home-logo11-219096700-320x202.png" alt="">
-          <img src="resources/home-logo10-219096700-320x202.png" alt="">
-          <img src="resources/home-logo2-219096700-320x202.png" alt="">
-          <img src="resources/home-logo1-219096700-320x202.png" alt="">
-          <img src="resources/home-logo9-219096700-320x202.png" alt="">
-         </div>
-       </section>
-
-        <section id="bottomjumbo">
-         <div class="inspiring">
-           <h2>Building Inspiring Spaces</h2>
-           <hr class="upperhr">
-           <p>Vivamus sed consectetur tellus dolo sit amet, consectetur asipiscing lorem elit sapid ipsum ficilis uns.</p>
-         </div>
-         <div class="buttons">
-           <button type="button" class="ochrabtn" name="button">GET A FREE QUOTES</button>
-           <h6>Only takes a few seconds!</h6>
-         </div>
-       </section>
-
-
-       <div id="footer">
-
+         <p>Vivamus sed consectetur tellus dolo sit amet, consectetur asipiscing lorem elit sapid ipsum ficilis uns.</p>
+       </div>
+       <!-- BOTTOM JUMBOTRON BUTTONS -->
+       <div class="buttons">
+         <button type="button" class="ochrabtn" name="button">GET A FREE QUOTES</button>
+         <h6>Only takes a few seconds!</h6>
+       </div>
+     </section>
+     <!-- FOOTER, PARTE INFERIORE -->
+     <div id="footer">
        <footer>
-
-
+         <!-- LEFT PART OF FOOTER ,  PARTE SX DEL FOOTER -->
          <div class="leftfooter">
            <div class="leftfooter" v-for="obj in left">
              <img v-if="obj.type === 'img' " :src="obj.content" alt="">
@@ -299,38 +334,38 @@
              <button class="ochrabtn" v-if="obj.type === 'button'" type="button" name="button">{{obj.content}}</button>
            </div>
          </div>
-         <div class="">
-
-        <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">Do you need sublime WordPress hosting for your next website? Take advantage of exclusive partner offers that we have secured just for you, &amp; launch your site in seconds with <a href="https://twitter.com/hashtag/avada?src=hash&amp;ref_src=twsrc%5Etfw">#avada</a> on WP Engine hosting &amp; get 30% Off this Black Friday <a href="https://t.co/HBFiOtlnez">https://t.co/HBFiOtlnez</a> <a href="https://twitter.com/hashtag/BlackFriday2020?src=hash&amp;ref_src=twsrc%5Etfw">#BlackFriday2020</a> <a href="https://t.co/fgqRzbr6Dg">pic.twitter.com/fgqRzbr6Dg</a></p>&mdash; ThemeFusion (@Theme_Fusion) <a href='https://twitter.com/Theme_Fusion/status/1332383066631892993?ref_src=twsrc%5Etfw'>November 27, 2020</a></blockquote>
-
-      </div>
-        <div class="contacts">
-          <h3>CONTACT US TODAY</h3>
-          <div class="contactcontainer" v-for="contact in contacts">
-            <div class="">
-              <i class="cont" :class="contact.icon"></i>
+         <!-- INTERACTIVE TWITTER -->
+         <div class="twit">
+           <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">Do you need sublime WordPress hosting for your next website? Take advantage of exclusive partner offers that we have secured just for you, &amp; launch your site in seconds with <a href="https://twitter.com/hashtag/avada?src=hash&amp;ref_src=twsrc%5Etfw">#avada</a> on WP Engine hosting &amp; get 30% Off this Black Friday <a href="https://t.co/HBFiOtlnez">https://t.co/HBFiOtlnez</a> <a href="https://twitter.com/hashtag/BlackFriday2020?src=hash&amp;ref_src=twsrc%5Etfw">#BlackFriday2020</a> <a href="https://t.co/fgqRzbr6Dg">pic.twitter.com/fgqRzbr6Dg</a></p>&mdash; ThemeFusion (@Theme_Fusion) <a href='https://twitter.com/Theme_Fusion/status/1332383066631892993?ref_src=twsrc%5Etfw'>November 27, 2020</a></blockquote>
+         </div>
+         <!--CONTACT SECTION,PARTE CONTATTI -->
+         <div class="contacts">
+           <h3 class="foottitle">CONTACT US TODAY</h3>
+           <div class="contactcontainer" v-for="contact in contacts">
+              <i  :class="contact.icon"></i>
+              <span>{{contact.adress}}</span>
             </div>
-            <p>{{contact.adress}}</p>
           </div>
-        </div>
-
-        <div class="map">
-          <h3>FIND US</h3>
-          <img src="resources/construction_map_pin.png" alt="">
-        </div>
-      </div>
-
+          <!-- MAPS , MAPPA -->
+          <div class="map">
+            <h3 class="foottitle">FIND US</h3>
+            <img src="resources/construction_map_pin.png" alt="">
+          </div>
        </footer>
-         <section id="subfooter">
-           <div id="copyright">
-             <p>COPYRIGHT 2012 -2015 AVADA THME BY <strong> THEME FUSION</strong> | ALL RIGHT RESERVED | POWERD BY <strong>WORDPRESS</strong> </p>
-           </div>
-           <div id="social">
-             <i v-for="icon in social" :class="icon"></i>
-           </div>
-         </section>
-       </div>
+       <!-- LAST SECTION,PARTE INFERIORE -->
+       <section id="subfooter">
+         <div id="copyright">
+           <p>COPYRIGHT 2012 -2015 AVADA THME BY <strong> THEME FUSION</strong> | ALL RIGHT RESERVED | POWERD BY <strong>WORDPRESS</strong> </p>
+         </div>
+         <!-- SOCIAL MEDIA BUTTONS -->
+         <div id="social">
+           <i v-for="icon in social" :class="icon"></i>
+         </div>
+       </section>
+     </div>
+     <!-- TWITTER SCRIPT -->
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <!-- LINK TO JAVASCRIPT FILE -->
     <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>

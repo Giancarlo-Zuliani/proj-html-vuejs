@@ -78,22 +78,44 @@ header::after{
   text-align: center;
 }
 
-#jumbotron div{
+#jumbotron div:first-child{
   width:60%;
+}
+
+.demos{
+  position:absolute;
+  right:30px;
+  top:30px;
+}
+.demos i{
+  font-size: 45px;
+  color:#045287;
+}
+.demos > div{
+  cursor:pointer;
+  background-color: #fff;
+  border-radius: 5px;
+  padding:5px;
+  min-width:60px;
+  min-height: 60px;
+  margin:10px;
 }
 
 #jumbotron div h2{
   color:#fff;
   margin-bottom:5%;
+  font-size: 3rem;
+  font-weight: bolder;
 }
 
 #jumbotron div h5{
   color:#fed03d;
+  font-size: 1.5rem;
   margin-bottom: 5%;
 }
 
 .ochrabtn , .greybtn{
-  padding:5px 10px;
+  padding:10px 20px;
   border:none;
   cursor: pointer;
 }
@@ -132,6 +154,7 @@ header::after{
   left:50%;
   transform: translate(-50%,-50%);
   font-weight: 300;
+  letter-spacing: 1.5;
 }
 
 .banner button{
@@ -155,6 +178,7 @@ header::after{
 }
 #specialist p  , #explore p , #corevalue p{
   margin:20px auto;
+  color:#666665;
 }
 
 .upperhr{
@@ -429,6 +453,7 @@ header::after{
   text-align: center;
   width:100%;
   margin-left:auto;
+  color:#666665;
 }
 
 .newscontainer{
@@ -641,61 +666,48 @@ footer ul{
 
 #social i{
   margin-right:15px;
+  color:#666665;
 }
 
 i{
   cursor:pointer;
 }
 
-.leftfooter{
+footer{
   display:flex;
-  flex-direction:column;
+  align-items: stretch;
+}
+footer>div{
+  width:25%;
+  padding:15px;
+  flex-shrink: -1;
+}
+.foottitle{
+  color:#fed03d;
+  margin-bottom:25px;
+}
+.twit{
   width:25%;
 }
-
-.contacts div p{
+.contacts div span{
   font-variant-numeric: oldstyle-nums;
-}
-
-.leftfooter *{
-  min-width:100%;
-}
-
-.leftfooter p{
-  width:100%;
-}
-
-blockquote{
-  width:25%;
-  margin:80px 5%;
-}
-
-.contacts{
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
 }
 
 .contactcontainer{
   display: flex;
-  justify-content: flex-start;
-  align-items:flex-start;
-  margin:20px auto;
+  align-items: stretch;
+  width:70%;
 }
 
-#footer div{
-  max-width:60%;
-  margin:5% 25px;
-  padding:0;
+.contactcontainer i{
+  padding:0 15px 15px 15px;
+}
+
+.contactcontainer{
+  margin-bottom:20px;
 }
 
 .map img{
-  max-width:100%;
-  ,margin-top:80px;
-}
-
-.cont{
-  margin:0;
-  max-width: 5%;
+  max-width: 100%;
+  cursor:pointer;
 }
