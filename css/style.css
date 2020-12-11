@@ -1,16 +1,42 @@
+/* GENERAL RULES */
 *{
   box-sizing: border-box;
   padding:0;
   margin:0;
   font-family: source-sans-pro, sans-serif;
-font-style: normal;
-font-weight: 200;
+  font-style: normal;
+  font-weight: 200;
 }
 
 a{
   color:inherit;
   font-style: normal;
+  font-variant: normal;
 }
+.wrapinfo:before,
+.wrapinfo:after {
+  box-shadow: 0 0px 0 80px white;
+  border-radius: 100%;
+  position: absolute;
+  height: 280px;
+  right: -20%;
+  left: -20%;
+  top: 100%;
+}
+
+.wraptwo::before , .wraptwo::after{
+  box-shadow: 0 0px 0 80px #f0ede6;
+}
+
+.wrapinfo:after {
+  bottom: 100%;
+  top: auto;
+}
+
+i{
+  cursor:pointer;
+}
+/* HEADER */
 header{
   background-color: #fff;
   width:100%;
@@ -47,11 +73,7 @@ header ul li:last-child:hover{
   color:#fff;
 }
 
-
-.selected{
-  color:#f9d03f;
-}
-
+/* LITTLE ARROW AT HEADER BOTTOM */
 header::after{
   content:'';
   background: #fff;
@@ -63,9 +85,7 @@ header::after{
   left:60%;
   z-index: 99;
 }
-
-
-
+/* FIRST JUMBOTRON */
 #jumbotron{
   width:100%;
   min-height: 90vh;
@@ -81,12 +101,13 @@ header::after{
 #jumbotron div:first-child{
   width:60%;
 }
-
+/* LITTLE BOX AT RIGHT TOP OF JUMBOTRON */
 .demos{
   position:absolute;
   right:30px;
   top:30px;
 }
+
 .demos i{
   font-size: 45px;
   color:#045287;
@@ -113,7 +134,7 @@ header::after{
   font-size: 1.5rem;
   margin-bottom: 5%;
 }
-
+/* BUTTONS */
 .ochrabtn , .greybtn{
   padding:10px 20px;
   border:none;
@@ -129,17 +150,7 @@ header::after{
   background-color: #333333;
   color:#fff;
 }
-
-.greybtn:hover{
-  background-color: #fed03d;
-  color:#574f35;
-}
-
-.ochrabtn:hover{
-  background-color: #333333;
-  color:#fff;
-}
-
+/* YELLOW BANNER */
 .banner{
   background-color: #fed23f;
   text-align: center;
@@ -156,19 +167,13 @@ header::after{
   font-weight: 300;
   letter-spacing: 1.5;
 }
-
+/* YELLOW BANNER BUTTON */
 .banner button{
   position: relative;
   top:78px;
   border: #fff solid 1px;
 }
-
-.banner button:hover{
-  background-color: #fff;
-  color:#666668;
-  border:solid 1px #666668;
-}
-
+/* SECTIONS */
 #specialist ,#explore , #corevalue{
   width:100%;
   background-color: white;
@@ -176,6 +181,7 @@ header::after{
   text-align: center;
   padding-bottom:50px;
 }
+
 #specialist p  , #explore p , #corevalue p{
   margin:20px auto;
   color:#666665;
@@ -203,37 +209,6 @@ header::after{
   position: relative;
 }
 
-.specialistlayover{
-  display:none;
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  padding:5%;
-  background-color: #fff;
-}
-
-.specialistlayover div{
-  background-color: #ffe07b;
-  width:95%;
-  height:95%;
-  position: absolute;
-  left:50%;
-  top:50%;
-  transform: translate(-50%,-50%);
-  padding:15px;
-  border-radius: 15px;
-}
-.specialistlayover div p{
-  line-height: 2.2;
-  font-size: 12px;
-}
-.box:hover .specialistlayover{
-  display:block;
-}
-
-
 .box i {
   padding:12px;
   border:solid 1px #6b6868;
@@ -251,6 +226,7 @@ header::after{
 .wrapone{
   background-image: url('../resources/home-244125289.jpg');
 }
+
 .infos i , .infos h1{
   font-size: 45px;
   color:#fed23f;
@@ -268,26 +244,6 @@ header::after{
   justify-content: center;
 }
 
-.wrapinfo:before,
-.wrapinfo:after {
-  box-shadow: 0 0px 0 80px white;
-  border-radius: 100%;
-  position: absolute;
-  height: 280px;  /* You can change height to increase or decrease concave radius */
-  content: '';
-  right: -20%;
-  left: -20%;
-  top: 100%;
-}
-.wraptwo::before ,.wraptwo::after{
-  box-shadow: 0 0px 0 80px #f0ede6;
-
-}
-
-.wrapinfo:after {
-  bottom: 100%;
-  top: auto;
-}
 
 .infos{
   z-index:99;
@@ -310,42 +266,7 @@ header::after{
   margin-right:15px;
 }
 
-.explorelayover{
-  width:100%;
-  height:100%;
-  background-color: #fed03d;
-  color:#fff;
-  position: absolute;
-  left:0;
-  top:0;
-  display: none;
-}
 
-.explorebox:hover .explorelayover{
-  display: block;
-}
-
-.explorelayover div{
-  position:absolute;
-  left:50%;
-  top:50%;
-  transform: translate(-50%,-50%);
-  height:50%;
-  width:50%;
-}
-
-.explorelayover div i{
-  color:#fed03d;
-  background-color: #fff;
-  padding:10px;
-  margin:10px 5px;
-  border-radius: 50%;
-}
-
-.explorelayover div h3{
-  font-weight: 100;
-  margin-bottom: 20px;
-}
 
 .explorebox img{
   width: 100%;
@@ -426,6 +347,7 @@ header::after{
   letter-spacing: 3px;
   color:#bcbcbc;
 }
+
 .wraptwo{
   background-image: url('../resources/home-parallax-144609983.jpg');
   height:850px;
@@ -443,6 +365,7 @@ header::after{
 .testimonial hr{
  width:40%;
 }
+
 .testimonial p{
   width:80%;
   margin:20px auto;
@@ -520,33 +443,7 @@ header::after{
   color:#666668;
   cursor: pointer;
 }
-.newslayover{
-  width:100%;
-  position:relative;
-  height:20%;
-}
 
-.newslayover div{
-  position:absolute;
-  left:0;
-  top:0;
-  width:100%;
-  height:100%;
-  background-color:#fed23f;
-  display: none;
-  text-align: center;
-}
-.newslayover div i{
-  color:#fed03d;
-  background-color: #fff;
-  padding:10px;
-  margin:10px 5px;
-  border-radius: 50%;
-}
-
-.newsbox:hover .newslayover div{
-  display: block;
-}
 
 #partners{
   width:80%;
@@ -638,14 +535,7 @@ footer ul{
   list-style: none;
 }
 
-.corebox:hover .corei{
-  background-color:#fed23f;
-  color:white;
-}
 
-.corebox:hover h5{
-  color:#fede6f;
-}
 
 #subfooter{
   height:80px;
@@ -669,9 +559,6 @@ footer ul{
   color:#666665;
 }
 
-i{
-  cursor:pointer;
-}
 
 footer{
   display:flex;
@@ -711,3 +598,4 @@ footer>div{
   max-width: 100%;
   cursor:pointer;
 }
+ /* CONCAVE BOX */

@@ -1,0 +1,124 @@
+/* HOVER EFFECTS AND CONCAVE BOX */
+.selected{
+  color:#f9d03f;
+}
+
+.greybtn:hover{
+  background-color: #fed03d;
+  color:#574f35;
+}
+
+.ochrabtn:hover{
+  background-color: #333333;
+  color:#fff;
+}
+
+.banner button:hover{
+  background-color: #fff;
+  color:#666668;
+  border:solid 1px #666668;
+}
+
+.specialistlayover{
+  display:none;
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  padding:5%;
+  background-color: #fff;
+}
+
+.specialistlayover div{
+  background-color: #ffe07b;
+  width:95%;
+  height:95%;
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  padding:15px;
+  border-radius: 15px;
+}
+.specialistlayover div p{
+  line-height: 2.2;
+  font-size: 12px;
+}
+.box:hover .specialistlayover{
+  display:block;
+}
+
+.explorelayover{
+  width:100%;
+  height:100%;
+  background-color: #fed03d;
+  color:#fff;
+  position: absolute;
+  left:0;
+  top:0;
+  display: none;
+}
+
+.explorebox:hover .explorelayover{
+  display: block;
+}
+
+.explorelayover div{
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  height:50%;
+  width:50%;
+}
+
+.explorelayover div i{
+  color:#fed03d;
+  background-color: #fff;
+  padding:10px;
+  margin:10px 5px;
+  border-radius: 50%;
+}
+
+.explorelayover div h3{
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+
+.newslayover{
+  width:100%;
+  position:relative;
+  height:20%;
+}
+
+.newslayover div{
+  position:absolute;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  background-color:#fed23f;
+  display: none;
+  text-align: center;
+}
+.newslayover div i{
+  color:#fed03d;
+  background-color: #fff;
+  padding:10px;
+  margin:10px 5px;
+  border-radius: 50%;
+}
+
+.newsbox:hover .newslayover div{
+  display: block;
+}
+
+.corebox:hover .corei{
+  background-color:#fed23f;
+  color:white;
+}
+
+.corebox:hover h5{
+  color:#fede6f;
+}
