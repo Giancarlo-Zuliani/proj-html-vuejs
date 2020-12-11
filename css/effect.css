@@ -1,8 +1,9 @@
-/* HOVER EFFECTS AND CONCAVE BOX */
+/* HOVER EFFECTS AND LAYOVER*/
+/* HEADER LINKS */
 .selected{
   color:#f9d03f;
 }
-
+/* BUTTONS */
 .greybtn:hover{
   background-color: #fed03d;
   color:#574f35;
@@ -18,7 +19,7 @@
   color:#666668;
   border:solid 1px #666668;
 }
-
+/* LAYOVERS */
 .specialistlayover{
   display:none;
   position:absolute;
@@ -41,10 +42,12 @@
   padding:15px;
   border-radius: 15px;
 }
+
 .specialistlayover div p{
   line-height: 2.2;
   font-size: 12px;
 }
+
 .box:hover .specialistlayover{
   display:block;
 }
@@ -90,6 +93,7 @@
   width:100%;
   position:relative;
   height:20%;
+
 }
 
 .newslayover div{
@@ -101,7 +105,9 @@
   background-color:#fed23f;
   display: none;
   text-align: center;
+  padding-top:25px;
 }
+
 .newslayover div i{
   color:#fed03d;
   background-color: #fff;

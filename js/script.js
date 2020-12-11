@@ -1,3 +1,4 @@
+// HEADER
 const header = new Vue({
   el:'#navbar',
   data:{
@@ -28,7 +29,7 @@ const header = new Vue({
       href:'#bottonjumbo'
     }]
   },
-  methods:{
+  methods:{//THIS METHOD CHANGE COLOR TO LINK AT CLICK
     activate:function(index){
       if(index != (this.links.length - 1)){
         for(let i=0;i < this.links.length;i++){
@@ -40,6 +41,7 @@ const header = new Vue({
   }
 });
 
+// FOOTER
 const footer = new Vue({
   el:'#footer',
   data:{
