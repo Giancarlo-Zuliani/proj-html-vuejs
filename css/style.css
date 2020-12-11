@@ -590,9 +590,10 @@ header::after{
 
 footer{
   background-color: #1e1e1e;
-  border-top:10px solid #31312f;
+  border-top:18px solid #31312f;
   display:flex;
   align-items: flex-start;
+  color:#666665;
 }
 footer section{
   display:flex;
@@ -678,26 +679,23 @@ blockquote{
 
 .contactcontainer{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items:flex-start;
   margin:20px auto;
-}
-
-.map img{
-  max-width: 100%;
-}
-
-.contacts i {
-  margin-right:20px;
-}
-
-
-.twitter-tweet{
-  max-width:30%;
-  margin-top:80px;
 }
 
 #footer div{
   max-width:60%;
   margin:5% 25px;
+  padding:0;
+}
+
+.map img{
+  max-width:100%;
+  ,margin-top:80px;
+}
+
+.cont{
+  margin:0;
+  max-width: 5%;
 }

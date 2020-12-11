@@ -291,21 +291,24 @@
 
        <footer>
 
+
          <div class="leftfooter">
            <div class="leftfooter" v-for="obj in left">
              <img v-if="obj.type === 'img' " :src="obj.content" alt="">
              <p v-if="obj.type === 'par'">{{obj.content}}</p>
-             <button v-if="obj.type === 'button'" type="button" name="button">{{obj.content}}</button>
+             <button class="ochrabtn" v-if="obj.type === 'button'" type="button" name="button">{{obj.content}}</button>
            </div>
          </div>
+         <div class="">
 
         <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">Do you need sublime WordPress hosting for your next website? Take advantage of exclusive partner offers that we have secured just for you, &amp; launch your site in seconds with <a href="https://twitter.com/hashtag/avada?src=hash&amp;ref_src=twsrc%5Etfw">#avada</a> on WP Engine hosting &amp; get 30% Off this Black Friday <a href="https://t.co/HBFiOtlnez">https://t.co/HBFiOtlnez</a> <a href="https://twitter.com/hashtag/BlackFriday2020?src=hash&amp;ref_src=twsrc%5Etfw">#BlackFriday2020</a> <a href="https://t.co/fgqRzbr6Dg">pic.twitter.com/fgqRzbr6Dg</a></p>&mdash; ThemeFusion (@Theme_Fusion) <a href='https://twitter.com/Theme_Fusion/status/1332383066631892993?ref_src=twsrc%5Etfw'>November 27, 2020</a></blockquote>
 
+      </div>
         <div class="contacts">
           <h3>CONTACT US TODAY</h3>
           <div class="contactcontainer" v-for="contact in contacts">
             <div class="">
-              <i :class="contact.icon"></i>
+              <i class="cont" :class="contact.icon"></i>
             </div>
             <p>{{contact.adress}}</p>
           </div>
@@ -315,6 +318,7 @@
           <h3>FIND US</h3>
           <img src="resources/construction_map_pin.png" alt="">
         </div>
+      </div>
 
        </footer>
          <section id="subfooter">
